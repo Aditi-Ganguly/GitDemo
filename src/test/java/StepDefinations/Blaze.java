@@ -31,6 +31,7 @@ public class Blaze {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		String titletext= driver.findElement(By.xpath("//div[@class='container']/h1")).getText();
 		String title= "Welcome to the Simple Travel Agency!";
+		String title= "Welcome to the Simple Travel Agency1!";
 		Assert.assertEquals(title, titletext);
 	}
 	@And("user clicks on hyperlink and see a new tab is opened")
